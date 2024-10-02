@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: pod
+metadata: 
+  name: nginx-pod
+  lables:
+    env: dev
+    project: impartus
+    type: frontend
+
+spec:
+  container: 
+  - name: nginx-container
+    image: nginx:latest
+    ports:
+    - conatinerPort: 80
